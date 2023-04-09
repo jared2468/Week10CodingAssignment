@@ -5,14 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Promineo Tech FE Bootcamp Week 10</title>
+    
+  <link rel="stylesheet" href="reset.css" media="screen" />
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
 </head>
-<h1>My Instrument Inventory</h1>
+<body class="info">
+<!-- <h1>My Instrument Inventory</h1>
 <bod class="container">
 
-    <br>
+    <br> -->
 
-    <div class="card">
+   <!-- <div class="card">
         <div class="card-body">
             <div class="row">
                 <div class="col-sm">
@@ -32,10 +35,92 @@
                 <button id="Add Instrument" class="btn btn-primary form-control">Add</button>
             </div>
         </div>
-     </div>
+     </div> 
 
 
+     <div id="instruments">
+        
+     </div> -->
 
+
+<div class="bg-info pb-2">
+    <form>
+        <h3><b>Add Instrument to Inventory:</b></h3><br> 
+        <div id="form" class="form-group row">
+            <!-- <label for="type" class="col-form-label">Type:</label> -->
+            <label for="type" class="col-sm-1 col-form-label">Type:</label>
+                <div class="col-sm-11">
+                    <input type="text" class="form-control" id="colFormLabel" placeholder="Type">
+                </div>
+        </div>
+        <div class="form-group row">
+                    <!-- <label for="type" class="col-form-label">Type:</label> -->
+            <label for="make" class="col-sm-1 col-form-label">Make:</label>
+                <div class="col-sm-11">
+                    <input type="text" class="form-control" id="colFormLabel" placeholder="Make">
+                </div>  
+        </div>
+        <div class="form-group row">
+            <!-- <label for="type" class="col-form-label">Type:</label> -->
+            <label for="model" class="col-sm-1 col-form-label">Model:</label>
+                <div class="col-sm-11">
+                    <input type="text" class="form-control" id="colFormLabel" placeholder="Model">
+                </div>
+        </div>
+        <div class="form-group row">
+                    <!-- <label for="type" class="col-form-label">Type:</label> -->
+            <label for="color" class="col-sm-1 col-form-label">Color:</label>
+                <div class="col-sm-11">
+                    <input type="text" class="form-control" id="colFormLabel" placeholder="Color">
+                </div>  
+        </div>
+            <!-- <div> -->
+                <!-- <input type="text" class="form-control" id="type">
+            </div> -->
+        </div>
+        <!-- <div class="form-inline">
+            <label for="make">Make:</label>
+            <input type="text" class="form-control" id="make">
+        </div>
+        <div class="form-group">
+            <label for="model">Model:</label>
+            <input type="text" class="form-control" id="model">
+        </div>
+        <div class="form-group">
+            <label for="color">Color:</label>
+            <input type="text" class="form-control" id="color">
+        </div> -->
+        
+        
+           <!--Type: <input type="text" id="type"><br><br> 
+            Make: <input type="text" id="make"><br><br> 
+            Model: <input type="text" id="model"><br><br> 
+            Color: <input type="text" id="color"><br><br>
+            --> 
+
+        <div class="text-center bg-info pb-5">
+            <button type="button" class="btn btn-dark" onclick=addData(this) git>Add Instrument</button>
+        </div>
+      </form>
+
+      </div>
+      <h2 class="text-center bg-info pb-5">Instrument Inventory:</h2>
+      <div id="table">
+        <table id="list" class="table table-dark">
+            <thead>
+                <tr>
+                  <th scope="col">Type</th>
+                  <th scope="col">Make</th>
+                  <th scope="col">Model</th>
+                  <th scope="col">Color</th>
+                </tr>
+              </thead>
+          <!-- <thead>
+            <tr><td>Type<td>Make<td>Model<td>Color</tr>
+          </thead> -->
+        </table>
+    </div>
+   
 
 
 
@@ -46,4 +131,5 @@
 <script src="Week10Coding.js"></script>
 
 </body>
+<footer class="bg-info text-center p-5">Created for Promineo Tech. by Jared Hollingsworth</footer>
 </html>
